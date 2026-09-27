@@ -1,0 +1,50 @@
+<div class="note">
+        <b>⚠️ CATATAN</b><br>
+        Pastikan nama penerima adalah
+        <b>KAY SCOFIELD</b>
+        sebelum melakukan pembayaran.
+        Setelah transfer, silakan kirim bukti pembayaran.
+      </div>
+
+
+      <footer>
+        © 2026 KAY SCOFIELD • PAYMENT PAGE
+      </footer>
+
+    </div>
+
+  </main>
+
+
+  <div class="copy-success" id="notification">
+    ✓ Nomor berhasil disalin
+  </div>
+
+
+  <script>
+
+    function copyText(text) {
+
+      navigator.clipboard.writeText(text).then(function() {
+
+        const notification =
+          document.getElementById("notification");
+
+        notification.classList.add("show");
+
+        setTimeout(function() {
+          notification.classList.remove("show");
+        }, 1800);
+
+      }).catch(function() {
+
+        alert("Nomor: " + text);
+
+      });
+
+    }
+
+  </script>
+
+</body>
+</html>
